@@ -15,8 +15,6 @@ with open('users.csv', 'r', encoding='utf-8') as users:
     print(users_list)
     users_dict = {}.fromkeys(users_list)
 with open('hobby.csv', 'r', encoding='utf-8') as hobby:
-    # for ln, lm in zip(hobby, users_list):
-    #     users_dict[lm] = ' '.join(ln.split())
     hobby_list = []
     for ln in hobby:
         hobby_list.append(' '.join(ln.split()))
